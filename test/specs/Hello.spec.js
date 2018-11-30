@@ -1,4 +1,5 @@
 import Hello from 'src/Hello.vue'
+import Spinner from 'src/Spinner.vue'
 import { createVM } from '../helpers/utils.js'
 
 describe('Hello.vue', function () {
@@ -6,6 +7,11 @@ describe('Hello.vue', function () {
     const vm = createVM(this, `
 <Hello></Hello>
 `, { components: { Hello }})
-    vm.$el.querySelector('.hello h1').textContent.should.eql('Hello World!')
+  })
+})
+
+describe('Spinner.vue', function () {
+  it('should render correct contents', function () {
+    createVM(this, '<Spinner></Spinner>', { components: { Spinner }})
   })
 })

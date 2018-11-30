@@ -1,9 +1,9 @@
 import Hello from './Hello.vue'
-import HelloJsx from './Hello.jsx'
+import Spinner from './Spinner.vue'
 
 function plugin (Vue) {
   Vue.component('hello', Hello)
-  Vue.component('hello-jsx', HelloJsx)
+  Vue.component('spinner', Spinner)
 }
 
 // Install by default if using the script tag
@@ -16,6 +16,6 @@ const version = '__VERSION__'
 // Export all components too
 export {
   Hello,
-  HelloJsx,
+  Spinner,
   version
 }

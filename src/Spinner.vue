@@ -7,10 +7,11 @@
 
 <script>
 export default {
+  name: 'spinner',
   data () {
     return {
       open: true,
-      text: '',
+      text: 'loading loading loading',
       size: ''
     }
   },
@@ -36,8 +37,8 @@ export default {
 .spinner {
   width: 70px;
   height: 70px;
-  border: 2px solid #eeee;
-  border-top: 2px solid #4ef1af;
+  border: 4px solid #eeee;
+  border-top: 4px solid #4ef1af;
   border-radius: 50%;
   animation: spin 1s infinite linear;
   margin: auto;
